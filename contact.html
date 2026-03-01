@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Greenden - Get in touch for plant inquiries, order support, plant care advice, and wholesale orders. We're here to help.">
+    <meta name="keywords" content="contact Greenden, plant inquiry, order support, plant care, wholesale plants">
+    <meta name="author" content="Greenden">
+    <meta name="theme-color" content="#dcfce7">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Contact Us | Greenden</title>
+</head>
+
+<body>
+    <!-- Site Header -->
+    <header class="sticky top-0 z-10">
+        <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl" aria-label="Main navigation">
+            <h1 class="text-2xl">GREENDEN</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <ul class="flex gap-5 text-gray-600 hidden md:flex">
+                <li>
+                    <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="/product.html">Product</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="py-10 md:py-14">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
+                <!-- Contact Banner -->
+                <div class="lg:mb-0 mb-6 lg:h-full">
+                    <div class="group w-full h-full">
+                        <div class="relative h-64 lg:h-full overflow-hidden rounded-2xl">
+                            <img src="./src/images/contact-banner.jpg" alt="Contact Greenden"
+                                class="w-full h-full object-cover" />
+                            <div class="absolute inset-0 bg-black/35"></div>
+                            <h1 id="contact-heading" class="font-bold text-3xl md:text-4xl text-white absolute top-6 left-6 z-10">Contact us
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-green-100 p-5 lg:p-8 rounded-2xl border border-black">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Send Us A Message</h2>
+                    <form action="#" method="post" aria-label="Contact form" class="space-y-4">
+                        <div>
+                            <label for="contact-name" class="block text-gray-600 text-sm font-medium mb-1">Your Name</label>
+                            <input type="text" id="contact-name" name="name"
+                                class="w-full h-11 text-gray-600 bg-white border border-black rounded p-2 focus:outline-none"
+                                placeholder="John Smith" required aria-required="true">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-gray-600 text-sm font-medium mb-1">Email Address</label>
+                            <input type="email" id="contact-email" name="email"
+                                class="w-full h-11 text-gray-600 bg-white border border-black rounded p-2 focus:outline-none"
+                                placeholder="john@example.com" required aria-required="true">
+                        </div>
+                        <div>
+                            <label for="contact-phone" class="block text-gray-600 text-sm font-medium mb-1">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="phone"
+                                class="w-full h-11 text-gray-600 bg-white border border-black rounded p-2 focus:outline-none"
+                                placeholder="(555) 123-4567">
+                        </div>
+                        <div>
+                            <label for="plant-interest" class="block text-gray-600 text-sm font-medium mb-1">Plant Interest</label>
+                            <select id="plant-interest" name="plant_interest"
+                                class="w-full h-11 text-gray-600 bg-white border border-black rounded p-2 focus:outline-none"
+                                aria-label="Select your plant interest">
+                                <option value="">Select your interest</option>
+                                <option value="indoor">Indoor Plants</option>
+                                <option value="outdoor">Outdoor Plants</option>
+                                <option value="artificial">Artificial Flowers</option>
+                                <option value="succulents">Succulents & Cacti</option>
+                                <option value="wholesale">Wholesale Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="inquiry-type" class="block text-gray-600 text-sm font-medium mb-1">Inquiry Type</label>
+                            <select id="inquiry-type" name="inquiry_type"
+                                class="w-full h-11 text-gray-600 bg-white border border-black rounded p-2 focus:outline-none"
+                                aria-label="Select inquiry type">
+                                <option value="">Select inquiry type</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="care">Plant Care Advice</option>
+                                <option value="delivery">Delivery & Shipping</option>
+                                <option value="custom">Custom Arrangement</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-gray-600 text-sm font-medium mb-1">Your Message</label>
+                            <textarea id="contact-message" name="message" rows="3"
+                                class="w-full text-gray-600 bg-white border border-black rounded p-2 focus:outline-none resize-none"
+                                placeholder="Tell us about your plant needs or questions..." required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full mt-6 bg-black text-white p-3 rounded font-medium hover:bg-gray-800 transition-colors">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+        <section class="bg-green-100 p-10 flex flex-col gap-5">
+            <h2 class="text-4xl font-bold">Greenden</h2>
+            <p>Your trusted source for premium plants and artificial flowers. Bringing nature indoors since 2020.</p>
+            <p>&copy; 2026 Greenden.com</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
