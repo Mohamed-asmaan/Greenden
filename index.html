@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Greenden - Premium indoor plants, outdoor plants, and artificial flowers. 160+ plant species with free shipping and 24/7 support.">
-    <meta name="keywords" content="plants, indoor plants, outdoor plants, artificial flowers, succulents, plant shop, Greenden">
+    <meta name="description"
+        content="Greenden - Premium indoor plants, outdoor plants, and artificial flowers. 160+ plant species with free shipping and 24/7 support.">
+    <meta name="keywords"
+        content="plants, indoor plants, outdoor plants, artificial flowers, succulents, plant shop, Greenden">
     <meta name="author" content="Greenden">
     <meta name="theme-color" content="#dcfce7">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://mohamed-asmaan.github.io/Greenden/index.html">
     <link href="./src/output.css" rel="stylesheet">
     <title>Greenden | Plants for Your Interior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -19,11 +22,31 @@
     <header class="sticky top-0 z-10">
         <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl" aria-label="Main navigation">
             <h1 class="text-2xl">GREENDEN</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6 md:hidden">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+            <div role="button" aria-label="ham-menu" id="hamMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 md:hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
             <ul class="flex gap-5 text-gray-600 hidden md:flex">
+                <li>
+                    <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Mobile navbar -->
+        <nav id="sideNav" class="bg-green-100 w-[50%] h-dvh fixed z-10 top-0 right-[-50%] transition-all duration-300 ease-in-out p-5">
+            <div class="p-5 text-right" aria-label="close" id="menuClose" role="button">
+                <p>X</p>
+            </div>
+            <ul class="flex flex-col gap-5 text-gray-600 md:hidden">
                 <li>
                     <a class="hover:underline hover:text-black" href="./index.html">Home</a>
                 </li>
@@ -37,9 +60,12 @@
         </nav>
     </header>
 
+
+
     <main>
         <!-- Hero Section -->
-        <section class="bg-green-100 p-4 md:p-10 flex justify-center items-center gap-2 " aria-labelledby="hero-heading">
+        <section class="bg-green-100 p-4 md:p-10 flex justify-center items-center gap-2 "
+            aria-labelledby="hero-heading">
             <div>
                 <p class="mb-4">We offer you a wide range of Artificial and Natural Flowers</p>
                 <h2 id="hero-heading" class="font font-bold text-3xl mb-5 md:text-5xl">Plants for your Interior</h2>
@@ -51,7 +77,8 @@
             </div>
 
             <div class="hidden md:block p-10">
-                <img class="w-80 h-70 object-cover" src="./src/images/img-2.avif" alt="Decorative indoor plants and foliage for home interior">
+                <img class="w-80 h-70 object-cover" src="./src/images/img-2.avif"
+                    alt="Decorative indoor plants and foliage for home interior">
             </div>
 
         </section>
@@ -86,8 +113,9 @@
                     <p class="mb-3.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque alias deleniti
                         perspiciatis quia quo illo modi incidunt eius, vero expedita.</p>
                 </article>
-                <article class="border border-black p-2 m-6" role="listitem"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-15 h-15 inline">
+                <article class="border border-black p-2 m-6" role="listitem"><svg xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-15 h-15 inline">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                     </svg>
@@ -159,7 +187,8 @@
             <p>Sign up for our email newsletter to get exclusive discounts, updates, and more</p>
             <form action="#" method="post" aria-label="Newsletter signup form">
                 <label for="newsletter-email" class="sr-only">Email address for newsletter</label>
-                <input type="email" id="newsletter-email" name="email" class="border border-black p-2 m-3 w-[80%]" placeholder="Enter your email" required aria-required="true">
+                <input type="email" id="newsletter-email" name="email" class="border border-black p-2 m-3 w-[80%]"
+                    placeholder="Enter your email" required aria-required="true">
                 <br>
                 <button type="submit" class="bg-black text-white p-3 m-1 underline">Subscribe</button>
             </form>
@@ -174,6 +203,8 @@
             <p>&copy; 2026 Greenden.com</p>
         </section>
     </footer>
+
+    <script src="./script.js" defer></script>
 
 </body>
 
