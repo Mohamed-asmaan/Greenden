@@ -26,7 +26,7 @@ var searchInput = document.getElementById("product-search")
 var products = document.querySelectorAll('[role="listitem"]');
 
 searchInput.addEventListener("keyup", function (event) {
-    var userInput = event.target.value
+    var userInput = event.target.value.toLowerCase()
 
     for (i = 0; i < products.length; i++) {
 
